@@ -1,0 +1,31 @@
+body {
+  /* background-image: linear-gradient(to right, black, white); */
+  background: rgb(34, 193, 195);
+  background: radial-gradient(
+    circle,
+    rgba(34, 193, 195, 1) 0%,
+    rgba(84, 34, 107, 1) 100%
+  );
+}
+
+.homeRecipePhoto {
+  width: 400px;
+  height: auto;
+}
+
+#recipePageTitle {
+  text-align: center;
+}
+
+/* .recipeLink {
+  margin-bottom: 50%;
+} */
+
+.recipeBlock {
+  text-align: center;
+  margin-bottom: 5%;
+}
+
+.goHome {
+  text-align: center;
+}
