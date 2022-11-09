@@ -6,7 +6,7 @@
 body {
   /* background-image: linear-gradient(to right, black, white); */
   /* background-image: url("https://img.freepik.com/free-photo/vegetables-set-left-black-slate_1220-685.jpg?w=2000"); */
-  background-image: url("/repos/odin-recipes/Img/AdobeStock_517549233.jpeg");
+  background-image: url("./Assets/AdobeStock_517549233.jpeg");
   background-size: 45%;
   /* background-repeat: repeat; */
   /* background-color: black; */
@@ -19,7 +19,7 @@ body {
 }
 
 #recipePageTitle {
-  color: white;
+  color: red;
   font-family: Georgia, "Times New Roman", Times, serif;
   font-size: 4vw;
   background-color: black;
