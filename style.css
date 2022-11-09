@@ -1,3 +1,8 @@
+*{
+  /* box-sizing below makes each box size equal to its length x width values (including any padding, border, margin) */
+  box-sizing: border-box; 
+}
+
 body {
   /* background-image: linear-gradient(to right, black, white); */
   /* background-image: url("https://img.freepik.com/free-photo/vegetables-set-left-black-slate_1220-685.jpg?w=2000"); */
@@ -16,27 +21,33 @@ body {
 #recipePageTitle {
   color: white;
   font-family: Georgia, "Times New Roman", Times, serif;
-  font-size: 75px;
+  font-size: 4vw;
   background-color: black;
   max-width: 25%;
   text-align: center;
   margin-top: 2%;
-  margin-bottom: 2%;
+  margin-bottom: 4%;
   margin-left: auto;
   margin-right: auto;
+  border: 1px solid white;
 }
 .recipeName {
-  font-size: 30px;
+  font-size: 1.5vw;
+  background-color: black;
   color: white;
   /* font-style:normal; */
-  background-color: black;
+  
+  padding: 2%;
+  border: 1px solid white;
+  /* display: inline-flexbox; */
 }
 
 .homeRecipePhoto {
-  width: 350px;
+  width: 75%;
   height: auto;
-  margin-top: 2%;
+  margin-top: 5%;
   transition: 0.6s ease;
+  border: 1px solid white;
 }
 
 .homeRecipePhoto:hover {
@@ -56,6 +67,10 @@ body {
 .recipeBlock {
   text-align: center;
   margin-bottom: 5%;
+  /* display: block; */ /* this would set each block to have its own line*/
+  display: flex;
+  justify-content: space-evenly;
+  flex-wrap: wrap;
 }
 
 .goHome {
