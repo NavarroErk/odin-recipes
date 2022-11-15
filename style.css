@@ -82,3 +82,7 @@ body {
 .goHome {
   text-align: center;
 }
+
+#goHome{
+  margin: 2vw;
+}
