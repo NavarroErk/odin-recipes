@@ -47,7 +47,7 @@ body {
   /* display: inline-flexbox; */
 }
 
-.homeRecipePhoto {
+.homeRecipeImg {
   width: 27vw;
   height: 19vw;
   margin-top: 4vw;
@@ -55,7 +55,7 @@ body {
   border: 2px solid slateblue;
 }
 
-.homeRecipePhoto:hover {
+.homeRecipeImg:hover {
   /* transform: translateY(-2px); */
   transform: scale3d(1.1, 1.1, 1.1);
 }
@@ -85,4 +85,17 @@ body {
 
 #goHome{
   margin: 2vw;
+}
+
+.recipeContainer{
+  width: 35vw;
+  margin: auto;
+  padding: 1vw;
+  border-radius: 25px;
+  /* color: white; */
+  background-color: white;
+}
+
+.recipeImg{
+  width: 23vw;
 }
