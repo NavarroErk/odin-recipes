@@ -7,7 +7,7 @@ body {
   /* background-image: linear-gradient(to right, black, white); */
   /* background-image: url("https://img.freepik.com/free-photo/vegetables-set-left-black-slate_1220-685.jpg?w=2000"); */
   background-image: url("./Assets/AdobeStock_517549233.jpeg");
-  background-size: 45vw;
+  background-size: 45%;
   /* background-repeat: repeat; */
   /* background-color: black; */
   /* background: rgb(34, 193, 195);
@@ -33,31 +33,31 @@ body {
 }
 
 .recipeItem{
-  width: 25vw;
+  width: 450px;
 }
 
 .recipeName {
-  font-size: 1vw;
-  background-color: black;
+  font-size: 25px;
+  /* background-color: black; */
   color: white;
   /* font-style:normal; */
-  /* max-width: 22vw; */
-  padding: 1vw;
-  border: 1px solid white;
+  max-width: 220px;
+  padding: 1px;
+  /* border: 1px solid white; */
   /* display: inline-flexbox; */
 }
 
 .homeRecipeImg {
-  width: 27vw;
-  height: 19vw;
-  margin-top: 4vw;
+  width: 400px;
+  height: 300px;
+  margin-top: 25px;
   transition: 0.6s ease;
   border: 2px solid slateblue;
 }
 
 .homeRecipeImg:hover {
   /* transform: translateY(-2px); */
-  transform: scale3d(1.1, 1.1, 1.1);
+  transform: scale3d(1.05, 1.05, 1);
 }
 
 #recipePageTitle {
@@ -71,8 +71,8 @@ body {
 
 .recipeBlock {
   text-align: center;
-  margin-top: 5vw;
-  margin-bottom: 5vw;
+  margin-top: 50px;
+  margin-bottom: 50px;
   /* display: block; */ /* this would set each block to have its own line*/
   display: flex;
   justify-content: space-evenly;
@@ -84,18 +84,58 @@ body {
 }
 
 #goHome{
-  margin: 2vw;
+  margin: 20px;
 }
 
 .recipeContainer{
-  width: 35vw;
+  width: 600px;
   margin: auto;
-  padding: 1vw;
+  padding: 25px;
   border-radius: 25px;
   /* color: white; */
   background-color: white;
 }
 
+.recipeContainer.coconutGranola h1{
+  font-size: 33px;
+}
+.recipeContainer.pumpkinBread h1{
+  font-size: 33px;
+}
+
 .recipeImg{
-  width: 23vw;
+  width: 500px;
+}
+
+.homeContainer{
+  background-color:rgba(0, 0, 0, 0.9);
+  margin: auto;
+  padding:1px;
+  border: 2px solid white;
+  border-radius: 100px;
+  text-align: center;
+  max-width: 1600px;
+}
+
+/* width */
+::-webkit-scrollbar {
+  width: 10px;
+}
+
+/* Track */
+::-webkit-scrollbar-track {
+  box-shadow: inset 0 0 5px grey;
+  border-radius: 10px;
+}
+
+/* Handle */
+::-webkit-scrollbar-thumb {
+  background: rgb(47, 34, 85);
+  border-radius: 10px;
+}
+
+/* Handle on hover */
+::-webkit-scrollbar-thumb:hover {
+  background: rgb(47, 38, 95);
+  
 }
