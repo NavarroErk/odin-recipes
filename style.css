@@ -1,26 +1,17 @@
 *{
   /* box-sizing below makes each box size equal to its length x width values (including any padding, border, margin) */
   box-sizing: border-box; 
+  font-family: 'Lora', serif;
 }
 
 body {
-  /* background-image: linear-gradient(to right, black, white); */
-  /* background-image: url("https://img.freepik.com/free-photo/vegetables-set-left-black-slate_1220-685.jpg?w=2000"); */
   background-image: url("./Assets/AdobeStock_517549233.jpeg");
   background-size: 45%;
-  /* background-repeat: repeat; */
-  /* background-color: black; */
-  /* background: rgb(34, 193, 195);
-  background: radial-gradient(
-    circle,
-    rgba(34, 193, 195, 1) 0%,
-    rgba(84, 34, 107, 1) 100%
-  ); */
 }
 
 #recipePageTitle {
   color: white;
-  font-family: Georgia, "Times New Roman", Times, serif;
+  font-family: 'Lora', serif;
   font-size: 4vw;
   background-color: black;
   max-width: 25vw;
@@ -90,17 +81,40 @@ body {
 .recipeContainer{
   width: 600px;
   margin: auto;
-  padding: 25px;
-  border-radius: 25px;
-  /* color: white; */
+}
+#sandwich{
+  background-image: url(./Assets/border.jpeg);
   background-color: white;
+  background-size:595px 935px;
+  background-position: center;
+  padding: 50px;
 }
+#sandwich h1{
+  text-align: center;
+}
+#coconutGranola{
+  background-image: url(./Assets/border.jpeg);
+  background-color: white;
+  background-size:595px 1230px;
+  background-position: center;
+  padding: 50px;
+}
+#coconutGranola h1{
+  font-size: 33px;
+  text-align: center;
 
-.recipeContainer.coconutGranola h1{
-  font-size: 33px;
 }
-.recipeContainer.pumpkinBread h1{
+#pumpkinBread{
+  background-image: url(./Assets/border.jpeg);
+  background-color: white;
+  background-size:595px 1270px;
+  background-position: center;
+  padding: 50px;
+}
+#pumpkinBread h1{
   font-size: 33px;
+  text-align: center;
+
 }
 
 .recipeImg{
