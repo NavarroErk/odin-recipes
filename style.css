@@ -7,7 +7,7 @@ body {
   /* background-image: linear-gradient(to right, black, white); */
   /* background-image: url("https://img.freepik.com/free-photo/vegetables-set-left-black-slate_1220-685.jpg?w=2000"); */
   background-image: url("./Assets/AdobeStock_517549233.jpeg");
-  background-size: 45%;
+  background-size: 45vw;
   /* background-repeat: repeat; */
   /* background-color: black; */
   /* background: rgb(34, 193, 195);
@@ -19,35 +19,40 @@ body {
 }
 
 #recipePageTitle {
-  color: red;
+  color: white;
   font-family: Georgia, "Times New Roman", Times, serif;
   font-size: 4vw;
   background-color: black;
-  max-width: 25%;
+  max-width: 25vw;
   text-align: center;
-  margin-top: 2%;
-  margin-bottom: 4%;
+  margin-top: 2vw;
+  margin-bottom: 4vw;
   margin-left: auto;
   margin-right: auto;
   border: 1px solid white;
 }
+
+.recipeItem{
+  width: 25vw;
+}
+
 .recipeName {
-  font-size: 1.5vw;
+  font-size: 1vw;
   background-color: black;
   color: white;
   /* font-style:normal; */
-  
-  padding: 2%;
+  /* max-width: 22vw; */
+  padding: 1vw;
   border: 1px solid white;
   /* display: inline-flexbox; */
 }
 
 .homeRecipePhoto {
-  width: 75%;
-  height: auto;
-  margin-top: 5%;
+  width: 27vw;
+  height: 19vw;
+  margin-top: 4vw;
   transition: 0.6s ease;
-  border: 1px solid white;
+  border: 2px solid slateblue;
 }
 
 .homeRecipePhoto:hover {
@@ -66,7 +71,8 @@ body {
 
 .recipeBlock {
   text-align: center;
-  margin-bottom: 5%;
+  margin-top: 5vw;
+  margin-bottom: 5vw;
   /* display: block; */ /* this would set each block to have its own line*/
   display: flex;
   justify-content: space-evenly;
