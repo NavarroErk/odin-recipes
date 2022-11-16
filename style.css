@@ -53,7 +53,6 @@ body {
 
 #recipePageTitle {
   text-align: center;
-  font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
 }
 
 /* .recipeLink {
@@ -64,7 +63,6 @@ body {
   text-align: center;
   margin-top: 50px;
   margin-bottom: 50px;
-  /* display: block; */ /* this would set each block to have its own line*/
   display: flex;
   justify-content: space-evenly;
   flex-wrap: wrap;
@@ -78,6 +76,15 @@ body {
   margin: 20px;
 }
 
+.recipeStage{
+  /* background-color: ; */
+  background-color:rgba(0, 0, 0, 0.9);
+  margin: auto;
+  width: 650px;
+  padding: 20px;
+  border: 2px solid white;
+  /* border-radius: 50px; */
+}
 .recipeContainer{
   width: 600px;
   margin: auto;
