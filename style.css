@@ -85,6 +85,7 @@ nav{
   /* background-color: ; */
   background-color:rgba(0, 0, 0, 0.9);
   margin: auto;
+  margin-bottom: 50px;
   width: 650px;
   padding: 20px;
   border: 2px solid white;
