@@ -98,7 +98,7 @@ nav{
 #sandwich{
   background-image: url(./Assets/border.jpeg);
   /* background-color: white; */
-  background-size:595px 935px;
+  background-size:595px 985px;
   background-position: center;
   padding: 50px;
 }
@@ -108,7 +108,7 @@ nav{
 #coconutGranola{
   background-image: url(./Assets/border.jpeg);
   background-color: white;
-  background-size:595px 1230px;
+  background-size:595px 1290px;
   background-position: center;
   padding: 50px;
 }
