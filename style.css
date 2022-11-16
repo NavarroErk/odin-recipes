@@ -9,6 +9,10 @@ body {
   background-size: 45%;
 }
 
+nav{
+  background-color: black;
+}
+
 #recipePageTitle {
   color: white;
   font-family: 'Lora', serif;
@@ -88,10 +92,12 @@ body {
 .recipeContainer{
   width: 600px;
   margin: auto;
+  /* background-image: linear-gradient(to bottom right, red, yellow); */
+  
 }
 #sandwich{
   background-image: url(./Assets/border.jpeg);
-  background-color: white;
+  /* background-color: white; */
   background-size:595px 935px;
   background-position: center;
   padding: 50px;
