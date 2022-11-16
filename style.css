@@ -41,6 +41,7 @@ nav{
 }
 
 .homeRecipeImg {
+  width: 500px;
   max-width: 90%;
   max-height: 90%;
   margin-top: 25px;
