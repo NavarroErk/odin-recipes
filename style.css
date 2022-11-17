@@ -84,6 +84,8 @@ nav{
 
 .recipeStage > *{
   max-width: 100%;
+  /* display:inline-block; */
+  /* flex: 1; */
 }
 
 .recipeStage{
@@ -92,8 +94,10 @@ nav{
   margin: auto;
   margin-bottom: 50px;
   width: 650px;
+  max-width: 90%;
   padding: 20px;
   border: 2px solid white;
+  /* flex: 1; */
   /* border-radius: 50px; */
 }
 .recipeContainer{
@@ -106,6 +110,7 @@ nav{
   background-image: url(./Assets/border.jpeg);
   /* background-color: white; */
   background-size:595px 985px;
+  background-size: 99% 99%;
   background-position: center;
   padding: 50px;
 }
@@ -117,6 +122,7 @@ nav{
   background-image: url(./Assets/border.jpeg);
   background-color: white;
   background-size:595px 1290px;
+  background-size: 100% 100%;
   background-position: center;
   padding: 50px;
 }
@@ -129,6 +135,7 @@ nav{
   background-image: url(./Assets/border.jpeg);
   background-color: white;
   background-size:595px 1270px;
+  background-size: 100% 100%;
   background-position: center;
   padding: 50px;
 }
@@ -139,6 +146,8 @@ nav{
 
 .recipeImg{
   width: 500px;
+  max-width: 100%;
+  border: 3px solid black;
 }
 
 .homeContainer{
@@ -171,5 +180,4 @@ nav{
 /* Handle on hover */
 ::-webkit-scrollbar-thumb:hover {
   background: rgb(47, 38, 95);
-  
 }
