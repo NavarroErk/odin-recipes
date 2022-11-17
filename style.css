@@ -4,7 +4,7 @@
   font-family: 'Lora', serif;
 }
 
-body {
+.recipeProject{
   background-image: url("./Assets/AdobeStock_517549233.jpeg");
   background-size: 45%;
 }
@@ -12,6 +12,13 @@ body {
 nav{
   background-color: black;
   max-width: 100%;
+}
+.navBtn{
+  background-color: black;
+  color: white;
+  margin-left: 25px;
+  margin-top: 5px;
+  margin-bottom: 5px;
 }
 
 #recipePageTitle {
@@ -84,6 +91,7 @@ nav{
 
 .recipeStage > *{
   max-width: 100%;
+  /* margin-top: 250px; */
   /* display:inline-block; */
   /* flex: 1; */
 }
@@ -92,6 +100,7 @@ nav{
   /* background-color: ; */
   background-color:rgba(0, 0, 0, 0.9);
   margin: auto;
+  margin-top: 25px;
   margin-bottom: 50px;
   width: 650px;
   max-width: 90%;
