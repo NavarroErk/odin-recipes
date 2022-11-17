@@ -110,7 +110,7 @@ nav{
   background-image: url(./Assets/border.jpeg);
   /* background-color: white; */
   background-size:595px 985px;
-  background-size: 99% 99%;
+  background-size: 95% 99%;
   background-position: center;
   padding: 50px;
 }
@@ -122,7 +122,7 @@ nav{
   background-image: url(./Assets/border.jpeg);
   background-color: white;
   background-size:595px 1290px;
-  background-size: 100% 100%;
+  background-size: 97% 100%;
   background-position: center;
   padding: 50px;
 }
@@ -135,7 +135,7 @@ nav{
   background-image: url(./Assets/border.jpeg);
   background-color: white;
   background-size:595px 1270px;
-  background-size: 100% 100%;
+  background-size: 95% 100%;
   background-position: center;
   padding: 50px;
 }
