@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Rock Paper Scissors</title>
+    <link rel="stylesheet" href="stylesheet.css" />
+  </head>
+  <body>
+    <nav>
+      <button class="navBtn" onclick="location.href = '../index.html'">
+        Rick Navarro Home
+      </button>
+    </nav>
+    <p id="title">Rock, Paper, Scissors</p>
+    <p id="firstTo5">First to 5 Wins</p>
+    <p id="direction">Choose your selection:</p>
+    <div class="selectionContainer">
+      <div class="selectionRow">
+        <div id="rockSelectionDiv" class="selection">
+          <button href="" id="rockSelection">
+            <img id="rockImg" src="./Assets/rock.svg" alt="" />
+          </button>
+          <label for="">Rock</label>
+        </div>
+        <div id="paperSelectionDiv" class="selection">
+          <button href="" id="paperSelection">
+            <img id="paperImg" src="./Assets/paper.svg" alt="" />
+          </button>
+          <label for="">Paper</label>
+        </div>
+        <div id="scissorsSelectionDiv" class="selection">
+          <button href="" id="scissorsSelection">
+            <img id="scissorsImg" src="./Assets/scissors.svg" alt="" />
+          </button>
+          <label for="">Scissors</label>
+        </div>
+      </div>
+    </div>
+    <div>
+      <p id="output"></p>
+    </div>
+    <div class="scoresDiv">
+      <p id="playerScorePara">Player Score: 0</p>
+      <p id="computerScorePara">Computer Score: 0</p>
+    </div>
+    <button id="playAgainBtn" style="display: none">Play Again</button>
+    <script src="rockPaperScissors.js"></script>
+  </body>
+</html>

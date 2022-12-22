@@ -1,0 +1,158 @@
+nav{
+    background-color: black;
+    max-width: 100%;
+}
+.navBtn{
+    background-color: black;
+    color: white;
+    margin-left: 25px;
+    margin-top: 5px;
+    margin-bottom: 5px;
+    font-size: 24px;
+}
+.navBtn:hover{
+    cursor: pointer;
+}
+
+body{
+    background-color: black;
+    color: white;
+}
+
+#title{
+    font-size: 32pt;
+    width: fit-content;
+    margin: 0 auto;
+    margin-top: 100px;
+}
+
+#direction, #firstTo5{
+    font-size: 22pt;
+    width: fit-content;
+    margin: 0 auto;
+    margin-top: 50px;
+}
+
+.selectionContainer{
+    display: flex;
+    justify-content: center;
+    /* align-content: space-between; */
+    /* margin-right: 250px; */
+}
+
+.selectionRow{
+    margin-top: 50px;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+}
+
+@media (max-width: 767px) {
+    .parent {
+      flex-direction: column; /* Make the child elements stack vertically */
+    }
+    .selectionRow{
+        width: 416px;
+        margin-left: 25%;
+    }
+    
+  }
+
+  @media (max-height: 739){
+    #rockImg{
+        height: 100px;
+        width: 90px;
+    }
+    
+    #paperImg{
+        height: 100px;
+        width: 100px;
+    }
+    
+    #scissorsImg{
+        height: 100px;
+        width: 100px;
+    }
+  }
+
+/*#region playerChoiceImg */
+#rockImg{
+    height: 200px;
+    width: 175px;
+}
+
+#paperImg{
+    height: 200px;
+    width: 200px;
+}
+
+#scissorsImg{
+    height: 200px;
+    width: 200px;
+}
+
+/*#endregion playerChoiceImg */
+
+#rockSelectionDiv{
+    margin-right: 25px;
+}
+
+label{
+    font-size: 20pt;
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+
+.selection{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+#rockSelection{
+    background-color: black;
+}
+#paperSelection{
+    background-color: black;
+}
+#scissorsSelection{
+    background-color: black;
+}
+
+#output{
+    margin: 0 auto;
+    margin-top: 50px;
+    width: fit-content;
+    font-size: 24pt;
+}
+
+.scoresDiv{
+    display: flex;
+    justify-content: center;
+}
+
+#playerScorePara, #computerScorePara{
+    font-size: 24pt;
+    margin: 40px;
+}
+
+#playAgainBtn{
+    /* display: none; */
+    display:block;
+    margin: 0 auto;
+    width: fit-content;
+    height:100px;
+    font-size: 28pt;
+    background-color: black;
+    color: white;
+    border: 1px solid whitesmoke;
+    box-shadow: 0 0 0 0 rgba(105, 105, 105, 0);
+    transition: box-shadow 0.5s ease-out
+}
+
+#playAgainBtn:active{
+    box-shadow: 0 0 0 5px rgba(154, 154, 154, 0.98);
+    transition: ease-in;
+}
+#playAgainBtn:hover{
+    cursor: pointer;
+}
