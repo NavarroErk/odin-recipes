@@ -14,30 +14,29 @@
         Rick Navarro Home
       </button>
     </nav>
-    <div class="overlay">
-      <p class="overlayPara">Board Size Has Been Changed</p>
-    </div>
     <div class="container">
       <div class="content">
         <div class="info">
           <p class="penPara">Pen: Inactive</p>
-          <p class="colorPara"></p>
+          <p class="colorPara">Color: Black</p>
         </div>
         <div class="gameContents">
           <div class="buttons">
-            <label for="colorPicker" id="colorPickerLabel"
-              >Choose a color:</label
-            >
-            <input type="color" id="colorPicker" />
             <button class="colorBtn" onclick="changeColor('Lightgray')">
               Eraser
             </button>
+            <button class="colorBtn" onclick="changeColor('Black')">
+              Black
+            </button>
+            <button class="colorBtn" onclick="changeColor('White')">
+              White
+            </button>
+            <button class="colorBtn" onclick="changeColor('Gray')">Gray</button>
             <button class="colorBtn" onclick="changeColor('Rainbow')">
               Rainbow
             </button>
-            <button class="colorBtn" onclick="resetBoard()" id="resetBtn">
-              Reset
-            </button>
+            <button class="colorBtn" onclick="randomPicked()">Random</button>
+            <button class="colorBtn" onclick="resetBoard()">Reset</button>
           </div>
           <div class="board"></div>
 
@@ -51,18 +50,14 @@
               max="64"
               value="16"
             />
-            <button
-              class="changeSizeBtn"
-              onclick="renderBoard(boardSize.value)"
-            >
+            <button class="changeSizeBtn" onclick="changeSize(boardSize.value)">
               Change Size
             </button>
-            <p id="sizeChangeAlert"></p>
           </div>
         </div>
         <div class="titleDiv">
           <div class="knob" id="knob1"></div>
-          <h1 class="title">Odin Etch A Sketch</h1>
+          <h1 class="title">Etch A Sketch</h1>
           <div class="knob" id="knob2"></div>
         </div>
       </div>
@@ -74,6 +69,7 @@
         >Background Image by kues1. Click here for more info</a
       >
     </div>
+
     <script src="main.js"></script>
   </body>
 </html>

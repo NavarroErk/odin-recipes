@@ -1,12 +1,38 @@
+@media only screen and (max-width: 100px) {
+    *{
+        transform: scale(0.8);
+    }    
+}
+
 body{
-    background-image: url(./Assets/ripped-piece-white-paper.jpg);
+    background-image: url(/Assets/ripped-piece-white-paper.jpg);
     background-size: 120%;
 }
 
+.overlay{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 1; 
+    width: 175px;
+    height: 75px;
+    border: 2px solid black;
+    margin: 0 auto 0 auto;
+    padding: 15px;
+    position: relative;
+    top: 475px;
+    visibility:hidden;
+    border-radius: 5px;
+    background-color: white;
+    box-shadow: 5px 5px 5px rgba(0, 0, 0, 0.5);
+}
+
+.overlayPara{
+    font-size: 20pt;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+}
 .container{
     background-color: red;
-    /* border-top-left-radius: 100px; */
-    /* border-top-right-radius: 100px; */
     border-radius: 100px;
     border: 4px solid black;
     width: 700px;
@@ -14,6 +40,7 @@ body{
     margin-top: 5%;
     padding-left: 15px;
     box-shadow: 10px 10px 5px rgba(0, 0, 0, 0.5);
+    position: relative;
 }
 
 .info{
@@ -23,6 +50,8 @@ body{
 .penPara, .colorPara{
     margin: 20px;
     position: relative;
+    bottom: -5px;
+    font-size: 20pt;
 }
 
 .gameContents{
@@ -33,13 +62,26 @@ body{
 .board{
     width: 500px;
     height: 500px;
-    /* margin: 10px; */
-    /* margin-bottom: 75px; */
-    margin: 10px 0px 50px 0px;
+    margin: 10px 0px 20px -10px; /* top right bottom left */
     display: grid;
     border: 3px solid black;
     position: relative;
     left: 25px;
+}
+#colorPickerLabel{
+    width: 75px;
+    position: relative;
+    top: -25px;
+    right: -10px;
+}
+#colorPicker{
+    border-radius: 5px;
+    position: relative;
+    top: -20px;
+    width: 75px;
+    height: 50px;
+    margin-bottom: 10px;
+    background-color: black;
 }
 button{
     background-color: black;
@@ -47,6 +89,7 @@ button{
     border-radius: 5px;
     margin-top: 20px;
     height: 45px;
+    transition: 0.1s;
 }
 button:hover{
     cursor: pointer;
@@ -54,11 +97,17 @@ button:hover{
 .colorBtn{
     position: relative;
     top: -30px;
-    right: -5px;
+}
+button:active{
+    background-color: rgb(52, 52, 52);
+    border: 2px solid white;
 }
 .buttons{
     display: flex;
     flex-direction: column;
+}
+#resetBtn{
+    background-color: rgb(0, 0, 0);
 }
 
 .boardSizing{
@@ -67,28 +116,26 @@ button:hover{
     /* justify-content: ; */
     align-items: center;
 }
-
+#boardSizeLabel{
+    position: relative;
+    top: -70px;
+    right: -22px;
+    width: 80px;
+}
 #boardSize{
     transform: rotate(90deg);
     width: 110px;
-    /* height: 40px; */
     position: relative;
-    right: -19px;
+    right: -21px;
+    cursor:grab;
 }
-
-
-#boardSizeLabel{
-    /* margin-bottom: 150px; */
-    /* z-index: 01; */
-    position: relative;
-    top: -80px;
-    right: -18px;
-    width: 80px;
+#boardSize:active{
+    cursor: grabbing;
 }
 .changeSizeBtn{
     position: relative;
-    right: -19px;
-    bottom: -60px;
+    right: -20px;
+    bottom: -53px;
     width: 75px;
 }
 .titleDiv{
@@ -100,7 +147,7 @@ button:hover{
 .title{
     font-size: 32pt;
     position: relative;
-    top: -30px;
+    top: -15px;
     color: yellow;
     font-family: cursive;
 }
@@ -111,17 +158,16 @@ button:hover{
     width: 75px;
     border-radius: 100%;
     border: 3px solid rgb(116, 114, 114);
-    /* margin-left: 100px;
-    margin-right: 100px; */
+    box-shadow: 5px 5px 5px rgba(0, 0, 0, 0.5);
 }
 #knob1{
     position: relative;
-    left: -100px;
+    left: -50px;
     top: -25px;
 }
 #knob2{
     position: relative;
-    right: -85px;
+    right: -35px;
     top: -25px;
 }
 
@@ -134,3 +180,46 @@ a {
     background-color: rgb(201, 201, 201);
     color: black;
 }
+
+
+
+@keyframes shake {
+    0% {
+      transform: translate(1px, 1px) rotate(0deg);
+    }
+    10% {
+      transform: translate(-1px, -2px) rotate(-1deg);
+    }
+    20% {
+      transform: translate(-3px, 0px) rotate(1deg);
+    }
+    30% {
+      transform: translate(3px, 2px) rotate(0deg);
+    }
+    40% {
+      transform: translate(1px, -1px) rotate(1deg);
+    }
+    50% {
+      transform: translate(-1px, 2px) rotate(-1deg);
+    }
+    60% {
+      transform: translate(-3px, 1px) rotate(0deg);
+    }
+    70% {
+      transform: translate(3px, 1px) rotate(-1deg);
+    }
+    80% {
+      transform: translate(-1px, -1px) rotate(1deg);
+    }
+    90% {
+      transform: translate(1px, 2px) rotate(0deg);
+    }
+    100% {
+      transform: translate(1px, -2px) rotate(-1deg);
+    }
+  }
+
+  #shake{
+    animation: shake 1s;
+    animation-iteration-count: 1;
+  }

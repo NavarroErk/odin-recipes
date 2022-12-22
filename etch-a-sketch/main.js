@@ -26,21 +26,9 @@ function updateSizeValue(value) {
     boardSizeLabel.innerHTML = `Board Size: ${value} x ${value}` 
 }
 
-// console.log(boardSize.value);
-function changeSize(input) {
-    // boardSizeLabel.textContent = `${boardSize.value} x ${boardSize.value}`
-    if (input >= 4 && input <= 64) {
-        renderBoard(input)
-    } else if (input > 64){
-        alert("Too many squares. Please choose an amount less than or equal to 64")
-    } else if (input < 2) {
-        alert("Too few squares. Please choose an amount greater than or equal to 4")
-    }
-}
-
 function colorSquare() {
     if (click) {
-            // "this" refers to whatever square the event listener was added to
+    // "this" refers to whatever square the event listener was added to
     if (color === "Rainbow") {
         this.style.backgroundColor = `hsl(${Math.random() * 360}, 100%, 50%)`
     } else {
@@ -50,12 +38,20 @@ function colorSquare() {
 
 }
 
-let colorsArr = ["Black", "Blue", "Red", "Green", "Purple", "Pink", "Orange", "Yellow", "Gray"] 
 function changeColor(choice) {
+    let colorPicker = document.getElementById("colorPicker")
+    colorPicker.addEventListener("change", () => {
+    console.log(colorPicker.value)
+    color = colorPicker.value
+    changeColor(color)
+})
     color = choice
-    colorPara.textContent = `Color: ${color}`
     if (color == "Lightgray") {
         colorPara.textContent = "Eraser"
+    } else if (color == "Rainbow") {
+        colorPara.textContent = "Rainbow"
+    } else{
+        colorPara.textContent = ""
     }
 }
 
@@ -68,14 +64,23 @@ function randomPicked() {
 
 let penPara = document.querySelector(".penPara")
 function resetBoard() {
+    let container = document.querySelector(".container")
+    container.setAttribute("id", "shake")
+    setTimeout(() => {
+        container.removeAttribute("id", "shake")
+    }, 1000);
     let board = document.querySelector(".board")
-    // this below makes 16 cols, each col has width of 1/16th of the container
     let squares = board.querySelectorAll("div")
     squares.forEach((div) => div.style.backgroundColor = "Lightgray")
     click = false
     penPara.textContent = "Pen: Inactive"
-    color = "Black"
-    colorPara.textContent = "Color: Black"
+    if (color == "Lightgray") {
+        colorPara.textContent = "Eraser"
+    } else if (color == "Rainbow") {
+        colorPara.textContent = "Rainbow"
+    } else {
+        colorPara.textContent = ""
+    }
 }
 
 document.querySelector(".board").addEventListener("click", ()=> {
@@ -86,4 +91,5 @@ document.querySelector(".board").addEventListener("click", ()=> {
     penPara.textContent = "Pen: Inactive"
     }
 })
+
 
