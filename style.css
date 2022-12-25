@@ -24,10 +24,10 @@ body {
   /* #endregion unused */
   /* background by SVGBackgrounds.com */
   height: 0.7vh;
-  background: linear-gradient(0deg, rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.2)),
-  radial-gradient(84% 847% at 14% 14%, #15131f 0%, rgba(22, 20, 33, 0) 100%),
-  radial-gradient(40% 82% at 50% 50%, rgba(21, 19, 31, 0.74) 0%, rgba(21, 19, 31, 0.74) 100%),
-  radial-gradient(82% 26% at 34% 10%, #15131f 0%, rgba(130, 171, 199, 0.91) 46%, #8968ff 72%, #15131f 90%)
+  background: linear-gradient(0deg, rgba(0, 0, 0, 0.2), rgba(15, 15, 15, 0.2)),
+  radial-gradient(84% 847% at 14% 14%, #1c1929 0%, rgba(28, 25, 42, 0) 100%),
+  radial-gradient(40% 82% at 50% 50%, rgba(29, 27, 43, 0.74) 0%, rgba(28, 26, 42, 0.74) 100%),
+  radial-gradient(82% 26% at 34% 10%, #1d1a2b 0%, rgba(139, 184, 214, 0.91) 46%, #8b6bfd 72%, #1e1c2d 90%)
 }
 video{
   width: 100%;
@@ -128,7 +128,7 @@ nav{
   0% {
     opacity: 1;
   }
-  50% {
+  40% {
     opacity: 1;
   }
   100% {

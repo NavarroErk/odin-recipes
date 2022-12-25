@@ -2,4 +2,4 @@
     let overlay = document.querySelector("#overlay")
     setTimeout(()=> {
         overlay.parentNode.removeChild(overlay)
-    }, 4000)
+    }, 4500)
