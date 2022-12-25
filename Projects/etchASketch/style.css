@@ -8,7 +8,28 @@ body{
     background-image: url(/Assets/ripped-piece-white-paper.jpg);
     background-size: 120%;
 }
-
+nav{
+    display: flex;
+    justify-content:flex-start;
+    max-width: 100%;
+    background-color: black;
+    height: 62px;
+    /* padding-top: 10px; */
+}
+.navBtn{
+    background-color: transparent;
+    color: white;
+    margin-left: 32px;
+    margin-top: 13px;
+    margin-bottom: 5px;
+    font-size: 20pt;
+    border: none;
+    cursor: pointer;
+}
+.navBtn:active{
+    background-color: transparent;
+    border: none;
+}
 .overlay{
     display: flex;
     justify-content: center;
@@ -83,7 +104,7 @@ body{
     margin-bottom: 10px;
     background-color: black;
 }
-button{
+.changeSizeBtn{
     background-color: black;
     color: white;
     border-radius: 5px;
@@ -97,6 +118,12 @@ button:hover{
 .colorBtn{
     position: relative;
     top: -30px;
+    background-color: black;
+    color: white;
+    border-radius: 5px;
+    margin-top: 20px;
+    height: 45px;
+    transition: 0.1s;
 }
 button:active{
     background-color: rgb(52, 52, 52);
@@ -108,6 +135,10 @@ button:active{
 }
 #resetBtn{
     background-color: rgb(0, 0, 0);
+}
+#resetBtn:active{
+    background-color: rgb(52, 52, 52);
+    border: 2px solid white;
 }
 
 .boardSizing{

@@ -21,3 +21,6 @@ nav{
     border: none;
     cursor: pointer;
 }
+#homeBtn{
+  margin-right: -25px;
+}
