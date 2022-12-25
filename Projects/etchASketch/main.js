@@ -1,9 +1,9 @@
-let color = "Black"
+let color = "black"
 let click = false
 let colorPara = document.querySelector(".colorPara")
-
+let board = document.querySelector(".board")
 function renderBoard(size) {
-    let board = document.querySelector(".board")
+    
     let squares = board.querySelectorAll("div")
     squares.forEach((div) => div.remove())
     board.style.gridTemplateColumns = `repeat(${size}, 1fr)` 
@@ -37,14 +37,12 @@ function colorSquare() {
     }
 
 }
-
-function changeColor(choice) {
-    let colorPicker = document.getElementById("colorPicker")
-    colorPicker.addEventListener("change", () => {
-    console.log(colorPicker.value)
+let colorPicker = document.getElementById("colorPicker")
+colorPicker.addEventListener("change", () => {
     color = colorPicker.value
     changeColor(color)
 })
+function changeColor(choice) {
     color = choice
     if (color == "Lightgray") {
         colorPara.textContent = "Eraser"
@@ -54,13 +52,6 @@ function changeColor(choice) {
         colorPara.textContent = ""
     }
 }
-
-function randomPicked() {
-    randomIndex = Math.floor(Math.random() * colorsArr.length)
-    randomColor = colorsArr[randomIndex]
-    changeColor(randomColor)
-}
-
 
 let penPara = document.querySelector(".penPara")
 function resetBoard() {
