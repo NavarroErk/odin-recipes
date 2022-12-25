@@ -5,7 +5,7 @@
   }
   
   .recipeProject{
-    background-image: url("../Assets/AdobeStock_517549233.jpeg");
+    background-image: url("./Assets/AdobeStock_517549233.jpeg");
     background-size: 45%;
   }
   
@@ -19,7 +19,7 @@
     margin-left: 25px;
     margin-top: 5px;
     margin-bottom: 5px;
-    font-size: 24px;
+    font-size: 20pt;
   }
   
   #recipePageTitle {
@@ -117,7 +117,7 @@
     
   }
   #sandwich{
-    background-image: url(../Assets/border.jpeg);
+    background-image: url(./Assets/border.jpeg);
     /* background-color: white; */
     background-size:595px 985px;
     background-size: 100% 100%;
@@ -129,7 +129,7 @@
     /* max-width:min-content; */
   }
   #coconutGranola{
-    background-image: url(../Assets/border.jpeg);
+    background-image: url(./Assets/border.jpeg);
     background-color: white;
     background-size:595px 1290px;
     background-size: 100% 100%;
@@ -142,7 +142,7 @@
   
   }
   #pumpkinBread{
-    background-image: url(../Assets/border.jpeg);
+    background-image: url(./Assets/border.jpeg);
     background-color: white;
     background-size:595px 1270px;
     background-size:100% 100%;

@@ -1,13 +1,6 @@
-let color = "black"
+let color = "Black"
 let click = false
 let colorPara = document.querySelector(".colorPara")
-let colorPicker = document.getElementById("colorPicker")
-    colorPicker.addEventListener("change", () => {
-    console.log(colorPicker.value)
-    color = colorPicker.value
-    changeColor(color)
-})
-
 
 function renderBoard(size) {
     let board = document.querySelector(".board")
@@ -30,7 +23,7 @@ let boardSize = document.querySelector("#boardSize")
 let boardSizeLabel = document.querySelector("#boardSizeLabel")
 boardSize.onmousemove = (e) => updateSizeValue(e.target.value)
 function updateSizeValue(value) {
-    boardSizeLabel.textContent = `Board Size: ${value} x ${value}` 
+    boardSizeLabel.innerHTML = `Board Size: ${value} x ${value}` 
 }
 
 function colorSquare() {
@@ -42,9 +35,16 @@ function colorSquare() {
         this.style.backgroundColor = color
     }
     }
+
 }
 
 function changeColor(choice) {
+    let colorPicker = document.getElementById("colorPicker")
+    colorPicker.addEventListener("change", () => {
+    console.log(colorPicker.value)
+    color = colorPicker.value
+    changeColor(color)
+})
     color = choice
     if (color == "Lightgray") {
         colorPara.textContent = "Eraser"

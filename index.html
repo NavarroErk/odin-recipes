@@ -12,35 +12,25 @@
       crossorigin="anonymous"
     />
     <link rel="stylesheet" href="./style.css" />
-    <style>
-      body.dark-mode {
-        background-color: black;
-        color: white;
-      }
-      
-      @media screen and (prefers-color-scheme: light) {
-        body.dark-mode {
-          background-color: unset;
-          color: unset;
-        }
-      }
-      </style>
   </head>
   <body class="dark-mode">
+    <div id="overlay"></div>
     <nav>
-      <button class="navBtn" onclick="location.href = './recipes/index.html'">Recipes</button>
-      <button class="navBtn" onclick="location.href = './rockPaperScissors/index.html'">Rock-Paper-Scissors</button>
-      <button class="navBtn" onclick="location.href = './etch-a-sketch/index.html'">Etch-A-Sketch</button>
+
     </nav>
     </button>
-    <div class="indexTitle">
-      <h1>
+    <div class="indexTitleDiv">
+      <h1 id="indexTitle">
         Rick Navarro
         <br>
         Full Stack Web Developer
       </h1>
+      <div class="titleDivBtns">
+        <button class="titleBtn" id="projects" onclick="location.href = './projects/index.html'">View Projects</button>
+        <button class="titleBtn" id="resume">View Resume</button>
+      </div>
     </div>
-    <script>
+    <script src="main.js">
       function draw() {
   ctx.clearRect(0,0,WIDTH,HEIGHT);
   for (let i = 0; i < 100; i++) {

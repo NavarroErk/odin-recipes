@@ -8,7 +8,10 @@ nav{
     margin-left: 25px;
     margin-top: 5px;
     margin-bottom: 5px;
-    font-size: 24px;
+    font-size: 20pt;
+    position: relative;
+    bottom: 2px;
+    right: 2px;
 }
 .navBtn:hover{
     cursor: pointer;

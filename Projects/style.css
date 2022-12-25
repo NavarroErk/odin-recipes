@@ -1,0 +1,23 @@
+@media (prefers-color-scheme: dark) {
+    body {
+      background-color: #000;
+      color: #fff;
+    }
+  }
+nav{
+    display: flex;
+    justify-content:flex-start;
+    max-width: 100%;
+    background-color: black;
+    /* padding-top: 10px; */
+}
+.navBtn{
+    background-color: transparent;
+    color: white;
+    margin-left: 25px;
+    margin-top: 5px;
+    margin-bottom: 5px;
+    font-size: 20pt;
+    border: none;
+    cursor: pointer;
+}
